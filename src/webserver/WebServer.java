@@ -28,4 +28,10 @@ public class WebServer {
         return build(ServerLanguage.LARAVEL);
     }
 
+    @Override
+    public String toString() {
+        return "WebServer{" +
+                "language=" + language +
+                '}';
+    }
 }

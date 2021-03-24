@@ -37,4 +37,17 @@ public abstract class MicroControllerFactory implements ControllerFactory {
     public void addDeviceController() {
         this.deviceController = DeviceController.BUTTON;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "controllerType=" + controllerType +
+                ", weightMeasurementDevice=" + weightMeasurementDevice +
+                ", identificationDevice=" + identificationDevice +
+                ", storage=" + storage +
+                ", display=" + display +
+                ", internetConnection=" + internetConnection +
+                ", deviceController=" + deviceController +
+                '}';
+    }
 }

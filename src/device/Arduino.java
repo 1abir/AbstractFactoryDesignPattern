@@ -5,9 +5,9 @@ import device.types.ControllerType;
 import device.types.Display;
 import device.types.WeightMeasurementMethod;
 
-public class ATMEGA32 extends MicroControllerFactory{
+public class Arduino extends MicroControllerFactory{
 
-    public ATMEGA32(WeightMeasurementMethod weightDevice, ConnectionType connectionType) {
+    public Arduino(WeightMeasurementMethod weightDevice, ConnectionType connectionType) {
         buildController();
         addWeightMeasurementDevice(weightDevice);
         addConnectionDevice(connectionType);
@@ -19,11 +19,11 @@ public class ATMEGA32 extends MicroControllerFactory{
 
     @Override
     public void buildController() {
-        this.controllerType = ControllerType.ATMEGA32;
+        controllerType = ControllerType.ARDUINO;
     }
 
     @Override
     public void addDisplay() {
-        this.display = Display.LCD;
+        display = Display.LED;
     }
 }

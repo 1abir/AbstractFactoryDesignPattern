@@ -43,5 +43,15 @@ public abstract class RaspBerryPIFactory implements ControllerFactory{
     @Override
     public void addDeviceController() {}
 
-
+    @Override
+    public String toString() {
+        return "{" +
+                "controllerType=" + controllerType +
+                ", weightMeasurementDevice=" + weightMeasurementDevice +
+                ", identificationDevice=" + identificationDevice +
+                ", storage=" + storage +
+                ", display=" + display +
+                ", internetConnection=" + internetConnection +
+                '}';
+    }
 }
