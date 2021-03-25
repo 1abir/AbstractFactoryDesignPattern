@@ -28,11 +28,11 @@ public class Main {
         ControllerFactory device = null;
 
         switch (packages){
-            case GOLD:
+            case SILVER:
                 weightMeasurementDevice = WeightMeasurementMethod.LOAD_SENSOR;
                 device = new ATMEGA32(weightMeasurementDevice,connection);
                 break;
-            case SILVER:
+            case GOLD:
                 weightMeasurementDevice = WeightMeasurementMethod.WEIGHT_MODULE;
                 device = new Arduino(weightMeasurementDevice,connection);
                 break;
