@@ -5,7 +5,6 @@ import device.Arduino;
 import device.ControllerFactory;
 import device.RaspberryPi;
 import device.types.ConnectionType;
-import device.types.ControllerType;
 import device.types.WeightMeasurementMethod;
 import webserver.ServerLanguage;
 import webserver.WebServer;
